@@ -8,5 +8,5 @@ facebookIcon: 'FaFacebookF'
 googleIcon: 'FaGoogle'
 heroCategory: Rabdan Motors <br /> studio
 heroTitle: Rabdan <br /> Motors
-heroContactInfo: contact@Rustictudio.co
+heroContactInfo: contact@RabdanMotors.co
 ---
