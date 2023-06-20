@@ -238,3 +238,50 @@ body {
 .car-image{
  object-fit: cover;
 }
+
+
+/* -Filter Tab- */
+.filter-tab button {
+  @apply relative hover:text-black before:absolute before:left-0 before:bottom-0 before:right-0 before:h-[1px] before:opacity-0 before:bg-black before:transform before:scale-x-[0.2] before:transition before:duration-500 hover:before:opacity-100 hover:before:scale-x-100;
+}
+.filter-tab button.active {
+  @apply text-black before:opacity-100 before:scale-x-100;
+}
+
+/*------------------- test adrian css ---------------------*/
+.product-detail-container{
+ gap: 40px;
+ margin: 40px;
+ margin-top: 60px;
+ color: #324d67;
+
+}
+
+.product-detail-image{
+  border-radius: 15px;
+   background-color: #ebebeb;
+ 
+  cursor: pointer;
+  transition: .3s ease-in-out;
+}
+
+.small-images-container{
+  display: flex;
+  gap: 10px;
+  margin-top: 20px;
+}
+.small-image{
+  border-radius: 8px;
+  background-color: #ebebeb;
+  width: 80px;
+  height: 70px;
+  cursor: pointer;
+}
+
+.selected-image{
+  border: 5px solid #ffe1a0;
+}
+/*----------------car description------------------*/
+.description-span{
+  @apply font-medium ;
+}

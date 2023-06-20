@@ -12,7 +12,7 @@ export const schemaTypes = [
         options: {
           hotspot: true,
         }
-      },
+      }, 
       { 
         name: 'name',
         title: 'Name',
@@ -101,6 +101,13 @@ export const schemaTypes = [
         name: 'cylinders',
         title: 'Cylinders',
         type: 'number',
+      },
+      {
+        title: 'horse_power',
+        name: 'Horse_Power',
+        type: 'array',
+        of: [{type: 'number'}],
+        validation: Rule => Rule.max(2)
       },
       { 
         name: 'interior',
@@ -212,6 +219,7 @@ export const schemaTypes = [
             title: 'Cylinders',
             type: 'number',
           },
+          
           { 
             name: 'interior',
             title: 'Interior',
@@ -322,6 +330,7 @@ export const schemaTypes = [
             title: 'Cylinders',
             type: 'number',
           },
+          
           { 
             name: 'interior',
             title: 'Interior',
@@ -432,6 +441,7 @@ export const schemaTypes = [
             title: 'Cylinders',
             type: 'number',
           },
+          
           { 
             name: 'interior',
             title: 'Interior',
@@ -542,6 +552,7 @@ export const schemaTypes = [
             title: 'Cylinders',
             type: 'number',
           },
+          
           { 
             name: 'interior',
             title: 'Interior',
@@ -652,6 +663,7 @@ export const schemaTypes = [
             title: 'Cylinders',
             type: 'number',
           },
+          
           { 
             name: 'interior',
             title: 'Interior',
@@ -762,6 +774,7 @@ export const schemaTypes = [
             title: 'Cylinders',
             type: 'number',
           },
+          
           { 
             name: 'interior',
             title: 'Interior',
@@ -871,6 +884,7 @@ export const schemaTypes = [
             title: 'Cylinders',
             type: 'number',
           },
+          
           { 
             name: 'interior',
             title: 'Interior',
@@ -981,6 +995,7 @@ export const schemaTypes = [
             title: 'Cylinders',
             type: 'number',
           },
+          
           { 
             name: 'interior',
             title: 'Interior',
@@ -1091,6 +1106,7 @@ export const schemaTypes = [
             title: 'Cylinders',
             type: 'number',
           },
+          
           { 
             name: 'interior',
             title: 'Interior',
@@ -1201,6 +1217,7 @@ export const schemaTypes = [
             title: 'Cylinders',
             type: 'number',
           },
+          
           { 
             name: 'interior',
             title: 'Interior',
@@ -1311,6 +1328,7 @@ export const schemaTypes = [
             title: 'Cylinders',
             type: 'number',
           },
+          
           { 
             name: 'interior',
             title: 'Interior',
@@ -1421,6 +1439,7 @@ export const schemaTypes = [
             title: 'Cylinders',
             type: 'number',
           },
+          
           { 
             name: 'interior',
             title: 'Interior',
@@ -1531,6 +1550,7 @@ export const schemaTypes = [
             title: 'Cylinders',
             type: 'number',
           },
+          
           { 
             name: 'interior',
             title: 'Interior',
@@ -1641,6 +1661,7 @@ export const schemaTypes = [
             title: 'Cylinders',
             type: 'number',
           },
+          
           { 
             name: 'interior',
             title: 'Interior',

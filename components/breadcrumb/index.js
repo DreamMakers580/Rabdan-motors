@@ -11,7 +11,7 @@ function Breadcrumb(props) {
                         <Link href="/">Home</Link>
                     </li>
                     <li>
-                        <Link href="/projects">{activePage}</Link>
+                        <Link href="/cars">{activePage}</Link>
                     </li>
                 </ul>
                 <h1 className="lm:text-[60px] text-[36px] lm:leading-[60px] mt-[45px]">

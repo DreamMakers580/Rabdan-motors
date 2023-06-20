@@ -8,9 +8,12 @@ function CartItem({ car:{
     image,
     name,
     slug,
-    price
+    price,
+    year,
+    kilometers,
+    color
 } }) {
-   // const imagePath = `/images/projects/${project?.slug}/${project?.image}`;
+    //const imagePath = `/images/projects/${project?.slug}/${project?.image}`;
     //const linkPath = `/projects/${Car?.slug}`;
 
     return (
@@ -22,13 +25,13 @@ function CartItem({ car:{
 	  <div class="shadow p-4 rounded-lg bg-white">
 		<div class="flex justify-center relative rounded-lg overflow-hidden h-52">
 		  <div class="transition-transform duration-500 transform ease-in-out hover:scale-110 w-full">
-			<img src="https://img.freepik.com/free-photo/red-luxury-sedan-road_114579-5079.jpg?w=740&t=st=1686130617~exp=1686131217~hmac=f581e6769e91c36cb4f87c9f9aa742db097a849e359e202ba7d1d219415870b0" />
+			<img src={urlFor(image && image[0])} />
 		  </div>
 		</div>
 
 		<div class="mt-4">
 		  <h2 class="font-medium text-base md:text-lg text-gray-800 line-clamp-1" title="New York">
-			Statue of Liberty
+			{name}
 		  </h2>
 		  <p class="inline-block font-semibold text-primary whitespace-nowrap leading-tight rounded-xl">
 			  <span class="text-sm uppercase">
@@ -92,8 +95,8 @@ function CartItem({ car:{
             <path d="M3.656 9.89S5.83 9.329 12 9.329c6.171 0 8.344.563 8.344.563"></path>
             </svg>
             <span class="mt-2 ml-2  xl:mt-0">
-			  BMW
-			</span>
+			       BMW
+		       	</span>
 		  </p>
 		</div>
 

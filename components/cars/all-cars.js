@@ -78,19 +78,14 @@ const handlecCnditionUsedFilter = (array) => {
    
 
     return (
-        <>
-            <div className="container">
-                <div className="filter-tab flex xl:justify-end flex-wrap text-[#30373E] uppercase md:pb-155 pb-[55px] max-lg:pt-[55px]">
-                    <button
-                        className={` ml-10`}
-                        type="button"
-                        
-                        data-filter="all"
-                    >
-                        All
-                    </button>
+        <> 
+     <div className="container">
+        
+        <div className="filter-tab flex xl:justify-end flex-wrap text-[#30373E] uppercase md:pb-155 pb-[55px] max-lg:pt-[55px]">
+        
                    
           <select onChange={handlemake} id="countries" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+          <option >Select car make</option>
             <option defaultValue value="all">All</option>
             <option  value="bmw">Bmw</option>
             <option  value="audi">audi</option>
@@ -98,41 +93,20 @@ const handlecCnditionUsedFilter = (array) => {
             <option  value="dodge">Dodge</option>
           </select>
 
-                    <button
-                        className={`ml-10`}
-                        type="button"
-                        
-                        data-filter="residenital"
-                    >
-                        Residenital
-                    </button>
-
-          <select onChange={handleCondition} id="condition" className="bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+        
+          <select onChange={handleCondition} id="condition" className=" mx-3  bg-gray-50 border border-gray-300 text-gray-900 text-sm rounded-lg focus:ring-blue-500 focus:border-blue-500 p-2.5 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500">
+            <option >Select Condition</option>
             <option defaultValue value="all">All</option>
             <option  value="new">New</option>
             <option  value="used">Used</option>
           </select>
-                    <button
-                        className={` ml-10`}
-                        type="button"
-                        
-                        data-filter="commercial"
-                    >
-                        Commercial
-                    </button>
-                    <button
-                        className={` sm:ml-10 fixed-xs:mt-[10px]`}
-                        type="button"
-                        
-                        data-filter="suitanable-space"
-                    >
-                        search
-                    </button>
+                    
+                    
                 </div>
             </div>
-            <div className="grid xl:grid-cols-4 fixed-lg:grid-cols-3 fixed-md:grid-cols-2 gap-[5px]">
+              
                 <CarsGrid  cars={cars} />
-            </div>
+            
         </>
     );
 }

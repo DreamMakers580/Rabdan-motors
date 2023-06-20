@@ -17,6 +17,14 @@ export default function allCarsPage(
         audi,
         bentley,
         dodge,
+        ford,
+        gmc,
+        jeep,
+        land_rover,
+        maserati,
+        mercedes_benz,
+        porsche,
+        tesla,
        
     }
  ) {
@@ -26,6 +34,14 @@ export default function allCarsPage(
          ...audi,
          ...bentley,
          ...dodge,
+         ...ford,
+         ...gmc,
+         ...jeep,
+         ...land_rover,
+         ...maserati,
+         ...mercedes_benz,
+         ...porsche,
+         ...tesla,
        ]
     );
     
@@ -67,6 +83,30 @@ export const getServerSideProps = async () => {
     const dodgequery = '*[_type == "dodge"]';
     const dodge = await client.fetch(dodgequery);
 
+    const fordquery = '*[_type == "ford"]';
+    const ford = await client.fetch(fordquery);
+
+    const gmcquery = '*[_type == "gmc"]';
+    const gmc = await client.fetch(gmcquery);
+
+    const jeepquery = '*[_type == "jeep"]';
+    const jeep = await client.fetch(jeepquery);
+
+    const land_roverquery = '*[_type == "land_rover"]';
+    const land_rover = await client.fetch(land_roverquery);
+
+    const maseratiquery = '*[_type == "maserati"]';
+    const maserati = await client.fetch(maseratiquery);
+
+    const mercedes_benzquery = '*[_type == "mercedes_benz"]';
+    const mercedes_benz = await client.fetch(mercedes_benzquery);
+
+    const porschequery = '*[_type == "porsche"]';
+    const porsche = await client.fetch(porschequery);
+  
+    const teslaquery = '*[_type == "tesla"]';
+    const tesla = await client.fetch(teslaquery);
+
     
   
   
@@ -77,6 +117,14 @@ export const getServerSideProps = async () => {
          audi,
          bentley,
          dodge,
+         ford,
+         gmc,
+         jeep,
+         land_rover,
+         maserati,
+         mercedes_benz,
+         porsche,
+         tesla,
        
       }
     }
