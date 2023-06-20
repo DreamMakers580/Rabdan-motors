@@ -17,7 +17,7 @@ function Cardetails({ car }) {
         make,
         model,
         year,
-        wheels,
+        drive_train,
         color,
         vehicle_type,
         export_status,
@@ -27,6 +27,8 @@ function Cardetails({ car }) {
         seats,
         cylinders,
         interior, 
+        Horse_Power,
+        engine_capacity,
     }] = car;
     
     return (
@@ -62,7 +64,7 @@ function Cardetails({ car }) {
         <Cardescription title={"Model"} value={model} />
         <Cardescription title={"Year"} value={year} />
         <Cardescription title={"Exterior Color"} value={color} />
-        <Cardescription title={"Wheels"} value={wheels} />
+        <Cardescription title={"Drive Train"} value={drive_train} />
         <Cardescription title={"Vehicle type"} value={vehicle_type} />
         <Cardescription title={"Export status"} value={export_status} />
         <Cardescription title={"Specs"} value={specs} />
@@ -70,6 +72,8 @@ function Cardetails({ car }) {
         <Cardescription title={"Fuel"} value={fuel} />
         <Cardescription title={"Seats"} value={seats} />
         <Cardescription title={"Cylinders"} value={cylinders} />
+        <Cardescription title={"Engine Capacity"} value={engine_capacity + " L"} />
+        <Cardescription title={"Horse power"} value={Horse_Power + " HP"} />
         <Cardescription title={"Interior Color"} value={interior} />
       
 

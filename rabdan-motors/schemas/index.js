@@ -58,9 +58,9 @@ export const schemaTypes = [
         type: 'number',
       },
       { 
-        name: 'wheels',
-        title: 'Wheels',
-        type: 'number',
+        name: 'drive_train',
+        title: 'Drive_Train',
+        type: 'string',
       },
       { 
         name: 'color',
@@ -105,9 +105,12 @@ export const schemaTypes = [
       {
         title: 'horse_power',
         name: 'Horse_Power',
-        type: 'array',
-        of: [{type: 'number'}],
-        validation: Rule => Rule.max(2)
+        type: 'string',
+      },
+      { 
+        name: 'engine_capacity',
+        title: 'Engine_Capacity',
+        type: 'number',
       },
       { 
         name: 'interior',
@@ -175,9 +178,9 @@ export const schemaTypes = [
             type: 'number',
           },
           { 
-            name: 'wheels',
-            title: 'Wheels',
-            type: 'number',
+            name: 'drive_train',
+            title: 'Drive_Train',
+            type: 'string',
           },
           { 
             name: 'color',
@@ -219,7 +222,16 @@ export const schemaTypes = [
             title: 'Cylinders',
             type: 'number',
           },
-          
+          {
+            title: 'horse_power',
+            name: 'Horse_Power',
+            type: 'string',
+          },
+          { 
+            name: 'engine_capacity',
+            title: 'Engine_Capacity',
+            type: 'number',
+          },
           { 
             name: 'interior',
             title: 'Interior',
@@ -286,9 +298,9 @@ export const schemaTypes = [
             type: 'number',
           },
           { 
-            name: 'wheels',
-            title: 'Wheels',
-            type: 'number',
+            name: 'drive_train',
+            title: 'Drive_Train',
+            type: 'string',
           },
           { 
             name: 'color',
@@ -330,7 +342,16 @@ export const schemaTypes = [
             title: 'Cylinders',
             type: 'number',
           },
-          
+          {
+            title: 'horse_power',
+            name: 'Horse_Power',
+            type: 'string',
+          },
+          { 
+            name: 'engine_capacity',
+            title: 'Engine_Capacity',
+            type: 'number',
+          },
           { 
             name: 'interior',
             title: 'Interior',
@@ -397,9 +418,9 @@ export const schemaTypes = [
             type: 'number',
           },
           { 
-            name: 'wheels',
-            title: 'Wheels',
-            type: 'number',
+            name: 'drive_train',
+            title: 'Drive_Train',
+            type: 'string',
           },
           { 
             name: 'color',
@@ -441,7 +462,16 @@ export const schemaTypes = [
             title: 'Cylinders',
             type: 'number',
           },
-          
+          {
+            title: 'horse_power',
+            name: 'Horse_Power',
+            type: 'string',
+          },
+          { 
+            name: 'engine_capacity',
+            title: 'Engine_Capacity',
+            type: 'number',
+          },
           { 
             name: 'interior',
             title: 'Interior',
@@ -508,9 +538,9 @@ export const schemaTypes = [
             type: 'number',
           },
           { 
-            name: 'wheels',
-            title: 'Wheels',
-            type: 'number',
+            name: 'drive_train',
+            title: 'Drive_Train',
+            type: 'string',
           },
           { 
             name: 'color',
@@ -552,7 +582,16 @@ export const schemaTypes = [
             title: 'Cylinders',
             type: 'number',
           },
-          
+          {
+            title: 'horse_power',
+            name: 'Horse_Power',
+            type: 'string',
+          },
+          { 
+            name: 'engine_capacity',
+            title: 'Engine_Capacity',
+            type: 'number',
+          },
           { 
             name: 'interior',
             title: 'Interior',
@@ -619,9 +658,9 @@ export const schemaTypes = [
             type: 'number',
           },
           { 
-            name: 'wheels',
-            title: 'Wheels',
-            type: 'number',
+            name: 'drive_train',
+            title: 'Drive_Train',
+            type: 'string',
           },
           { 
             name: 'color',
@@ -663,7 +702,16 @@ export const schemaTypes = [
             title: 'Cylinders',
             type: 'number',
           },
-          
+          {
+            title: 'horse_power',
+            name: 'Horse_Power',
+            type: 'string',
+          },
+          { 
+            name: 'engine_capacity',
+            title: 'Engine_Capacity',
+            type: 'number',
+          },
           { 
             name: 'interior',
             title: 'Interior',
@@ -730,9 +778,9 @@ export const schemaTypes = [
             type: 'number',
           },
           { 
-            name: 'wheels',
-            title: 'Wheels',
-            type: 'number',
+            name: 'drive_train',
+            title: 'Drive_Train',
+            type: 'string',
           },
           { 
             name: 'color',
@@ -774,7 +822,16 @@ export const schemaTypes = [
             title: 'Cylinders',
             type: 'number',
           },
-          
+          {
+            title: 'horse_power',
+            name: 'Horse_Power',
+            type: 'string',
+          },
+          { 
+            name: 'engine_capacity',
+            title: 'Engine_Capacity',
+            type: 'number',
+          },
           { 
             name: 'interior',
             title: 'Interior',
@@ -840,9 +897,9 @@ export const schemaTypes = [
             type: 'number',
           },
           { 
-            name: 'wheels',
-            title: 'Wheels',
-            type: 'number',
+            name: 'drive_train',
+            title: 'Drive_Train',
+            type: 'string',
           },
           { 
             name: 'color',
@@ -884,7 +941,11 @@ export const schemaTypes = [
             title: 'Cylinders',
             type: 'number',
           },
-          
+          { 
+            name: 'engine_capacity',
+            title: 'Engine_Capacity',
+            type: 'number',
+          },
           { 
             name: 'interior',
             title: 'Interior',
@@ -951,9 +1012,9 @@ export const schemaTypes = [
             type: 'number',
           },
           { 
-            name: 'wheels',
-            title: 'Wheels',
-            type: 'number',
+            name: 'drive_train',
+            title: 'Drive_Train',
+            type: 'string',
           },
           { 
             name: 'color',
@@ -995,7 +1056,16 @@ export const schemaTypes = [
             title: 'Cylinders',
             type: 'number',
           },
-          
+          {
+            title: 'horse_power',
+            name: 'Horse_Power',
+            type: 'string',
+          },
+          { 
+            name: 'engine_capacity',
+            title: 'Engine_Capacity',
+            type: 'number',
+          },
           { 
             name: 'interior',
             title: 'Interior',
@@ -1062,9 +1132,9 @@ export const schemaTypes = [
             type: 'number',
           },
           { 
-            name: 'wheels',
-            title: 'Wheels',
-            type: 'number',
+            name: 'drive_train',
+            title: 'Drive_Train',
+            type: 'string',
           },
           { 
             name: 'color',
@@ -1106,7 +1176,16 @@ export const schemaTypes = [
             title: 'Cylinders',
             type: 'number',
           },
-          
+          {
+            title: 'horse_power',
+            name: 'Horse_Power',
+            type: 'string',
+          },
+          { 
+            name: 'engine_capacity',
+            title: 'Engine_Capacity',
+            type: 'number',
+          },
           { 
             name: 'interior',
             title: 'Interior',
@@ -1173,9 +1252,9 @@ export const schemaTypes = [
             type: 'number',
           },
           { 
-            name: 'wheels',
-            title: 'Wheels',
-            type: 'number',
+            name: 'drive_train',
+            title: 'Drive_Train',
+            type: 'string',
           },
           { 
             name: 'color',
@@ -1216,8 +1295,17 @@ export const schemaTypes = [
             name: 'cylinders',
             title: 'Cylinders',
             type: 'number',
+          },  
+          {
+            title: 'horse_power',
+            name: 'Horse_Power',
+            type: 'string',
           },
-          
+          { 
+            name: 'engine_capacity',
+            title: 'Engine_Capacity',
+            type: 'number',
+          },
           { 
             name: 'interior',
             title: 'Interior',
@@ -1284,9 +1372,9 @@ export const schemaTypes = [
             type: 'number',
           },
           { 
-            name: 'wheels',
-            title: 'Wheels',
-            type: 'number',
+            name: 'drive_train',
+            title: 'Drive_Train',
+            type: 'string',
           },
           { 
             name: 'color',
@@ -1328,7 +1416,16 @@ export const schemaTypes = [
             title: 'Cylinders',
             type: 'number',
           },
-          
+          {
+            title: 'horse_power',
+            name: 'Horse_Power',
+            type: 'string',
+          },
+          { 
+            name: 'engine_capacity',
+            title: 'Engine_Capacity',
+            type: 'number',
+          },
           { 
             name: 'interior',
             title: 'Interior',
@@ -1395,9 +1492,9 @@ export const schemaTypes = [
             type: 'number',
           },
           { 
-            name: 'wheels',
-            title: 'Wheels',
-            type: 'number',
+            name: 'drive_train',
+            title: 'Drive_Train',
+            type: 'string',
           },
           { 
             name: 'color',
@@ -1439,7 +1536,16 @@ export const schemaTypes = [
             title: 'Cylinders',
             type: 'number',
           },
-          
+          {
+            title: 'horse_power',
+            name: 'Horse_Power',
+            type: 'string',
+          },
+          { 
+            name: 'engine_capacity',
+            title: 'Engine_Capacity',
+            type: 'number',
+          },
           { 
             name: 'interior',
             title: 'Interior',
@@ -1506,9 +1612,9 @@ export const schemaTypes = [
             type: 'number',
           },
           { 
-            name: 'wheels',
-            title: 'Wheels',
-            type: 'number',
+            name: 'drive_train',
+            title: 'Drive_Train',
+            type: 'string',
           },
           { 
             name: 'color',
@@ -1550,7 +1656,16 @@ export const schemaTypes = [
             title: 'Cylinders',
             type: 'number',
           },
-          
+          {
+            title: 'horse_power',
+            name: 'Horse_Power',
+            type: 'string',
+          },
+          { 
+            name: 'engine_capacity',
+            title: 'Engine_Capacity',
+            type: 'number',
+          },
           { 
             name: 'interior',
             title: 'Interior',
@@ -1617,9 +1732,9 @@ export const schemaTypes = [
             type: 'number',
           },
           { 
-            name: 'wheels',
-            title: 'Wheels',
-            type: 'number',
+            name: 'drive_train',
+            title: 'Drive_Train',
+            type: 'string',
           },
           { 
             name: 'color',
@@ -1661,7 +1776,16 @@ export const schemaTypes = [
             title: 'Cylinders',
             type: 'number',
           },
-          
+          {
+            title: 'horse_power',
+            name: 'Horse_Power',
+            type: 'string',
+          },
+          { 
+            name: 'engine_capacity',
+            title: 'Engine_Capacity',
+            type: 'number',
+          },
           { 
             name: 'interior',
             title: 'Interior',
