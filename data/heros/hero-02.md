@@ -2,11 +2,11 @@
 id: 'hero-02'
 title: Hero Image
 image: /images/hero/2.jpg
-heroYear: 2022
-twitterIcon: 'FaTwitter'
+heroYear: 2023
+twitterIcon: 'FaInstagram'
 facebookIcon: 'FaFacebookF'
-googleIcon: 'FaGoogle'
+googleIcon: 'FaTiktok'
 heroCategory: Rabdan Motors <br /> studio
 heroTitle: Rabdan <br /> Motors
-heroContactInfo: contact@RabdanMotors.co
+heroContactInfo: info@RabdanMotors.co
 ---

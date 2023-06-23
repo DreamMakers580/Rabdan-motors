@@ -2,7 +2,7 @@ import PropTypes from 'prop-types';
 import Link from 'next/link';
 import Image from 'next/image';
 import * as AiIcons from 'react-icons/ai';
-
+import * as MdIcons from 'react-icons/md';
 function Services({ services }) {
     return (
         <div className="service-area md:pt-160 pt-[60px] relative before:bg-pattern-1 before:absolute before:h-[336px] before:w-[336px] before:top-[170px] before:left-[-168px]">
@@ -14,11 +14,11 @@ function Services({ services }) {
                                 Services
                             </span>
                             <h2 className="title text-black lm:text-[42px] lm:leading-[50px] text-[32px] mb-[60px]">
-                                Best cars <br /> you could ever see.
+                                Why you <br /> should chose us
                             </h2>
                             <div className="fixed-md:grid fixed-md:grid-cols-2 grid max-md:gap-[25px]">
                                 {services?.map((service) => {
-                                    const Icon = AiIcons[service?.icon];
+                                    const Icon = MdIcons[service?.icon];
                                     return (
                                         <div
                                             className="service-box"

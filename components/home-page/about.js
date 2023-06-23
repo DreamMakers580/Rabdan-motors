@@ -13,17 +13,16 @@ function About() {
                     <div className="about-content max-md:pt-10">
                         <span className={subTitle}>About</span>
                         <h2 className={title}>
-                            Over 12 years leading and deeps in Cars
-                             industrial
+                        Over 12 years of experience leading and specializing in the automotive industry.
                         </h2>
                         <h3 className="text-secondary text-2xl mb-12">
-                            We know that good design means <br /> good business
+                        Experience the ultimate in  <br /> luxury driving
                         </h3>
                         <p className={desc}>
-                        Lorem Ipsum is simply dummy text of the printing and typesetting
-                        industry. Lorem Ipsum has been the industry's standard dummy text ever
-                        since the 1500s, when an unknown printer took a galley of type and
-                        scrambled it to make a type specimen book
+                        Our team of experts is dedicated to providing you with a car-buying 
+                        experience that is second to none. We understand that buying a luxury car 
+                        is an investment in your lifestyle, which is why we work tirelessly to help 
+                        you find the perfect vehicle to meet your unique needs and preferences.
                         </p>
                         <Link href="/about">
                             <a className="boxed-btn text-[18px] leading-[30px]">
