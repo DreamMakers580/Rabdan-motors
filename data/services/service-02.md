@@ -1,6 +1,6 @@
 ---
-title: 'More Payment Options.'
-icon: 'AiOutlineShoppingCart'
+title: 'Several Payment Options.'
+icon: 'MdOutlinePayments'
 ---
 
-Lorem Ipsum is simply dummy text of the printing and typesetting
+Our car shop offers a variety of payment options to make purchasing a high-quality vehicle easy and accessible for everyone.

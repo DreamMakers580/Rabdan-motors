@@ -1,6 +1,6 @@
 ---
-title: 'Suitanable Space'
-icon: 'AiOutlineReload'
+title: 'high-quality services'
+icon: 'MdOutlineWorkspacePremium'
 ---
 
-Lorem Ipsum is simply dummy text of the printing and typesetting
+We are committed to ensuring your satisfaction with our car services, and we will work tirelessly to ensure that you are happy with the results.
