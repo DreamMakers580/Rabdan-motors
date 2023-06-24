@@ -22,6 +22,7 @@ module.exports = {
           },
           backgroundImage: {
             'pattern-1': "url('/images/background/pattern-1.png')",
+            'page-banner-1': "url('/images/page-banner/1.jpg')",
           },
           animation: {
               'fade-in-down': 'fadeInDown 3s linear normal',

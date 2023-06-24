@@ -1,5 +1,6 @@
 import Link from 'next/link';
 
+
 function PageBanner() {
     return (
         <div className="page-banner bg-page-banner-1 flex items-end justify-start lg:h-[950px] h-[550px] bg-fixed bg-center bg-cover relative before:absolute before:bg-black before:opacity-40 before:w-full before:h-full">
