@@ -28,9 +28,21 @@ function Hero({ heroItems, settings }) {
                 const GoogleIcon = FaIcons[heroItem?.googleIcon];
                 return (
                     <Slide className="hero-item" key={heroItem.id}>
-                        <div className={heroImage}>
+                        <div className={`${heroImage}  md:flex hidden`}>
                             <Image
+                               
                                 src={heroItem?.image}
+                                alt={heroItem?.title}
+                                layout="fill"
+                                objectFit="cover"
+                                quality={70}
+                                priority
+                            />
+                        </div>
+                        <div className={`${heroImage} md:hidden`}>
+                            <Image
+                               
+                                src={heroItem?.mobileimage}
                                 alt={heroItem?.title}
                                 layout="fill"
                                 objectFit="cover"

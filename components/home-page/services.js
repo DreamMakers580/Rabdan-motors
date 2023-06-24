@@ -52,9 +52,20 @@ function Services({ services }) {
                         </div>
                     </div>
                     <div className="lg:col-span-6">
-                        <div className="service-image flex justify-end w-full lg:h-full h-[679px] relative">
+                        <div className="hidden  service-image md:flex justify-end w-full lg:h-full h-[679px] relative">
                             <Image
                                 src="/images/service/1.jpg"
+                                alt="Service Image"
+                                quality={70}
+                                layout="fill"
+                                objectFit="cover"
+                                priority
+                            />
+                        </div>
+
+                        <div className=" service-image md:hidden flex justify-end w-full lg:h-full h-[679px] relative">
+                            <Image
+                                src="/images/service/mobile1.jpeg"
                                 alt="Service Image"
                                 quality={70}
                                 layout="fill"
