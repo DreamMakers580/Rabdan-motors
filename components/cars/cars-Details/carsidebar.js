@@ -25,6 +25,12 @@ function CarSidebar({ car }) {
         cylinders,
         interior 
     }] = car;
+
+    const makeThreeDigit = (number) => {
+ 
+        return number?.toLocaleString() 
+      
+    }
     return (
         <div className="post-sidebar border-[#eee] border p-[50px_29px_66px]">
             <div className="post-searchbar">
@@ -36,7 +42,7 @@ function CarSidebar({ car }) {
 			  <span class="text-lg uppercase">
 				AED
 			  </span>
-			  <span class="text-xl"> 3,200</span>
+			  <span class="text-xl"> {makeThreeDigit(price)}</span>
 			</p>
                 
             </div>
@@ -63,7 +69,7 @@ function CarSidebar({ car }) {
                 </h2>
 
                 <p className="post-list">
-                    { kilometers === 0 || kilometers === "0"? "new": "used" }
+                    { kilometers === 0 || kilometers === "0"? "New": "Used" }
                 </p>
             </div>
 

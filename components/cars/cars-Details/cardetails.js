@@ -31,6 +31,31 @@ function Cardetails({ car }) {
         engine_capacity,
     }] = car;
 
+    function rewrightMakeItemsToString(string) {
+      switch (string) {
+        case "land_rover": 
+           return "Land Rover"
+          break;
+  
+          case "alfa_romeo": 
+           return "Alfa Romeo "
+          break;
+      
+          case "rolls_roys": 
+           return "Rolls Roys"
+          break;
+  
+          case "mercedes_benz": 
+           return "Mercedes Benz"
+          break;
+      
+      
+        default: 
+          return string
+          break;
+      }
+    }
+
     const makeThreeDigit = (number) => {
  
         return number?.toLocaleString() 
@@ -65,8 +90,8 @@ function Cardetails({ car }) {
         <div className="grid px-[35px] lm:grid-cols-2 mt-12 gap-x-[25px] gap-y-[55px]">
 
            
-        <Cardescription title={"kilometers"} value={kilometers} />
-        <Cardescription title={"Make"} value={make} />
+        <Cardescription title={"kilometers"} value={makeThreeDigit(kilometers)} />
+        <Cardescription title={"Make"} value={rewrightMakeItemsToString(make)} />
         <Cardescription title={"Model"} value={model} />
         <Cardescription title={"Year"} value={year} />
         <Cardescription title={"Exterior Color"} value={color} />

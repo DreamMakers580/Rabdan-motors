@@ -10,7 +10,7 @@ import {urlFor} from "../../../lib/client"
 
 function CarContent({ car }) {
   
-    console.log("in the car banner"+JSON.stringify(car));
+   // console.log("in the car banner"+JSON.stringify(car));
     const [{
         image , 
         name , 

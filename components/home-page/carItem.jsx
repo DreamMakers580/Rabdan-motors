@@ -21,6 +21,31 @@ function CartItem({ car:{
       return number?.toLocaleString() 
     
   }
+
+  function rewrightMakeItemsToString(string) {
+    switch (string) {
+      case "land_rover": 
+         return "Land Rover"
+        break;
+
+        case "alfa_romeo": 
+         return "Alfa Romeo "
+        break;
+    
+        case "rolls_roys": 
+         return "Rolls Roys"
+        break;
+
+        case "mercedes_benz": 
+         return "Mercedes Benz"
+        break;
+    
+    
+      default: 
+        return string
+        break;
+    }
+  }
   
 
     return (
@@ -62,7 +87,7 @@ function CartItem({ car:{
            <path d="m7.758 9.256-1.06-1.06"></path>
            <path d="m16.242 9.256 1.061-1.06"></path>
           </svg>
-      <span class="mt-2 ml-2 xl:mt-0">
+      <span class="mt-2 md:ml-2 xl:mt-0">
 			   {makeThreeDigit(kilometers)}
 			</span>
 		  </p>
@@ -71,7 +96,7 @@ function CartItem({ car:{
             <path d="M12 3c-4.969 0-9 4.031-9 9s4.031 9 9 9 9-4.031 9-9-4.031-9-9-9Z"></path>
             <path d="M12 6v6.75h4.5"></path>
            </svg>
-			<span class="mt-2 ml-2 xl:mt-0">
+			<span class="mt-2 md:ml-2 xl:mt-0">
 			  {year}
 			</span>
 		  </p>
@@ -84,7 +109,7 @@ function CartItem({ car:{
              <path fill="currentColor" stroke="none" d="M12 19.453a2.25 2.25 0 1 0 0-4.5 2.25 2.25 0 0 0 0 4.5Z"></path>
              <path fill="currentColor" stroke="none" d="M15.375 8.25a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
           </svg>
-            <span class="mt-2 ml-2 xl:mt-0">
+            <span class="mt-2 md:ml-2 xl:mt-0">
 			  {color}
 			</span>
 		  </p>
@@ -101,8 +126,8 @@ function CartItem({ car:{
              <path d="M3 9h.75"></path>
             <path d="M3.656 9.89S5.83 9.329 12 9.329c6.171 0 8.344.563 8.344.563"></path>
             </svg>
-            <span class="mt-2 ml-2  xl:mt-0">
-			       {make}
+            <span class="mt-2 md:ml-2  xl:mt-0">
+			       {rewrightMakeItemsToString(make)}
 		       	</span>
 		  </p>
 		</div>
