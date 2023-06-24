@@ -1,7 +1,7 @@
 import Link from 'next/link';
 import Image from 'next/image';
 
-function About() {
+function AboutInAbout() {
     const subTitle = `text-[18px] leading-[32px] text-secondary uppercase`;
     const title = `lm:text-[42px] lm:leading-[50px] text-[32px] text-black mb-[35px] lg:max-w-[460px]`;
     const desc = `text-[14px] leading-[25px] text-secondary mb-[80px] lg:max-w-[490px]`;
@@ -45,4 +45,4 @@ function About() {
     );
 }
 
-export default About;
+export default AboutInAbout;

@@ -5,14 +5,14 @@ import Navbar from '@/components/navbar';
 import PageBanner from '@/components/pagebanner';
 import { getAllItems } from '../lib/items-util';
 import Footer from '@/components/layout/footer';
-import About from '@/components/about/about';
 
-import Services from '@/components/about/services';
+import About from '@/components/home-page/about';
+import Services from '@/components/home-page/services';
+
+
 
 function AboutPage({ 
-   
     services,
- 
 }) {
     return (
         <>

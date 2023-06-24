@@ -2,9 +2,9 @@ import PropTypes from 'prop-types';
 import Link from 'next/link';
 import Image from 'next/image';
 import * as AiIcons from 'react-icons/ai';
-import React from 'react';
 
-function Services({ services }) {
+
+function AboutServices({ services }) {
     return (
         <div className="service-area md:pt-160 pt-[60px] relative ">
             <div className="container max-w-full lg:pr-0">
@@ -73,9 +73,9 @@ function Services({ services }) {
     );
 }
 
-Services.propTypes = {
+AboutServices.propTypes = {
     services: PropTypes.instanceOf(Object).isRequired,
 };
 
-export default Services;
+export default AboutServices;
 
