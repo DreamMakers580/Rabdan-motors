@@ -10,9 +10,10 @@ import About from '@/components/about/about';
 import Services from '@/components/about/services';
 
 function AboutPage({ 
-    contactItems,
+   
     services,
- }) {
+ 
+}) {
     return (
         <>
             <Head>
