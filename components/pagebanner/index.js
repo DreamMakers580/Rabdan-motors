@@ -3,7 +3,7 @@ import Link from 'next/link';
 
 function PageBanner() {
     return (
-        <div className="page-banner md:bg-page-banner-1 bg-page-banner-2  flex items-end justify-start lg:h-[950px] h-[550px] bg-fixed bg-center bg-cover relative before:absolute before:bg-black before:opacity-40 before:w-full before:h-full">
+        <div className="page-banner md:bg-page-banner-1 bg-page-banner-2  flex items-end justify-start lg:h-[950px] h-[550px] bg-center bg-cover relative before:absolute before:bg-black before:opacity-40 before:w-full before:h-full">
             <div className="container">
                 <div className="banner-content pb-[80px] relative">
                     <span className="text-[18px] leading-[29px] text-white uppercase max-w-[225px] block">
