@@ -22,6 +22,20 @@
 body {
   background-color: white;
 }
+.custom-container {
+  @apply xl:max-w-full xl:px-[70px] px-[15px];
+}
+input:focus-visible,
+textarea:focus-visible {
+  @apply outline;
+}
+
+@layer base {
+  input,
+  textarea {
+      @apply placeholder:text-[#595959] fixed-xs:text-[14px];
+  }
+}
 
 /*  - header*/
 /*----------------------------------------*/
