@@ -4,7 +4,7 @@ import { FaSearch } from 'react-icons/fa';
 
 function CarSidebar({ car }) {
     
-    console.log("in the car side baaaaarrr"  +car);
+    
     const [{
         image , 
         name , 

@@ -41,9 +41,9 @@ function AboutServices({ services }) {
                         every step of the way.
                         </p>
 
-                        <div className="button-wrap pt-[20px]">
+                        <div className="button-wrap md:pt-[20px] pt-[10px]">
                             <Link href="/contact">
-                                <a className="inline-flex items-center text-[14px] leading-[30px] p-[11px_32px] transition duration-[0.4s] border border-[#969696] uppercase hover:border-black hover:bg-black hover:text-white">
+                                <a className="inline-flex mb-10 items-center text-[14px] leading-[30px] p-[11px_32px] transition duration-[0.4s] border border-[#969696] uppercase hover:border-black hover:bg-black hover:text-white">
                                     Map Direction
                                     <div className="ml-[5px]">
                                         <AiOutlineRight />
@@ -56,9 +56,20 @@ function AboutServices({ services }) {
                         </div>
                     </div>
                     <div className="lg:col-span-6">
-                        <div className="service-image flex justify-end w-full lg:h-full h-[679px] relative">
+                    <div className="hidden  service-image md:flex justify-end w-full lg:h-full h-[679px] relative">
                             <Image
                                 src="/images/service/1.jpg"
+                                alt="Service Image"
+                                quality={70}
+                                layout="fill"
+                                objectFit="cover"
+                                priority
+                            />
+                        </div>
+
+                        <div className=" service-image md:hidden flex justify-end w-full lg:h-full h-[679px] relative">
+                            <Image
+                                src="/images/service/mobile1.jpeg"
                                 alt="Service Image"
                                 quality={70}
                                 layout="fill"
