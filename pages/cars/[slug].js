@@ -22,6 +22,10 @@ function carsDetails({
   maserati,
   mercedes_benz,
   porsche,
+  rolls_roys,
+  lamborgini,
+  ferrari,
+  alfa_romeo,
 }) {
    
   const handleSlugfilter = (array) => {
@@ -42,6 +46,10 @@ function carsDetails({
      ...maserati,
      ...mercedes_benz,
      ...porsche,
+     ...rolls_roys,
+     ...lamborgini,
+     ...ferrari,
+     ...alfa_romeo,
    ]
 );
  // const {image} = bmw || home_products || audi || bentley || dodge; 
@@ -423,9 +431,99 @@ export const getStaticPaths = async () => {
   })
 
 
+  const rolls_roysquery = `*[_type == "rolls_roys"] {
+    slug {
+      current
+    }
+  }
+  `;
+
+  const rolls_roysproducts = await client.fetch(rolls_roysquery);
+
+  const rolls_royspaths = rolls_roysproducts.map((product) => {
+   
+    //arr = {...arr,params: { slug: product.slug.current}};
+    
+    return {params: { slug: product.slug.current}}
+    
+  });
+  rolls_royspaths.map((rolls_royspath , index)=>{
+    arr.push( rolls_royspath )
+    return null
+  })
 
 
-  console.log("test this thiiingggg"+ JSON.stringify(arr))
+  const lamborginiquery = `*[_type == "lamborgini"] {
+    slug {
+      current
+    }
+  }
+  `;
+
+  const lamborginiproducts = await client.fetch(lamborginiquery);
+
+  const lamborginipaths = lamborginiproducts.map((product) => {
+   
+    //arr = {...arr,params: { slug: product.slug.current}};
+    
+    return {params: { slug: product.slug.current}}
+    
+  });
+  lamborginipaths.map((lamborginipath , index)=>{
+    arr.push( lamborginipath )
+    return null
+  })
+
+
+  const ferrariquery = `*[_type == "ferrari"] {
+    slug {
+      current
+    }
+  }
+  `;
+
+  const ferrariproducts = await client.fetch(ferrariquery);
+
+  const ferraripaths = ferrariproducts.map((product) => {
+   
+    //arr = {...arr,params: { slug: product.slug.current}};
+    
+    return {params: { slug: product.slug.current}}
+    
+  });
+  ferraripaths.map((ferraripath , index)=>{
+    arr.push( ferraripath )
+    return null
+  })
+
+
+
+  const alfa_romeoquery = `*[_type == "alfa_romeo"] {
+    slug {
+      current
+    }
+  }
+  `;
+
+  const alfa_romeoproducts = await client.fetch(alfa_romeoquery);
+
+  const alfa_romeopaths = alfa_romeoproducts.map((product) => {
+   
+    //arr = {...arr,params: { slug: product.slug.current}};
+    
+    return {params: { slug: product.slug.current}}
+    
+  });
+  alfa_romeopaths.map((alfa_romeopath , index)=>{
+    arr.push( alfa_romeopath )
+    return null
+  })
+
+
+
+
+
+ // console.log("test this thiiingggg"+ JSON.stringify(arr))
 
   return {
     paths:arr,
@@ -472,6 +570,22 @@ export const getStaticProps = async ({ params: { slug }}) => {
   
   const teslaquery = '*[_type == "tesla"]';
   const tesla = await client.fetch(teslaquery);
+
+  const rolls_roysquery = '*[_type == "rolls_roys"]';
+  const rolls_roys = await client.fetch(rolls_roysquery);
+  
+
+  const lamborginiquery = '*[_type == "lamborgini"]';
+  const lamborgini = await client.fetch(lamborginiquery);
+  
+
+  const ferrariquery = '*[_type == "ferrari"]';
+  const ferrari = await client.fetch(ferrariquery);
+  
+  const alfa_romeoquery = '*[_type == "alfa_romeo"]';
+  const alfa_romeo = await client.fetch(alfa_romeoquery);
+  
+  
   
   
   // console.log("in the single car page "+ home_products  ); 
@@ -492,6 +606,11 @@ export const getStaticProps = async ({ params: { slug }}) => {
       mercedes_benz,
       porsche,
       tesla,
+      rolls_roys,
+      lamborgini,
+      ferrari,
+      alfa_romeo,
+
 
       
 

@@ -1,6 +1,7 @@
 import PropTypes from 'prop-types';
 import * as AiIcons from 'react-icons/ai';
 import * as FaIcons from 'react-icons/fa';
+
 import dynamic from 'next/dynamic';
 import { Slide } from '../swiper';
 

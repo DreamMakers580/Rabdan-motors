@@ -5,9 +5,9 @@ import Navbar from '@/components/navbar';
 import PageBanner from '@/components/pagebanner';
 import { getAllItems } from '../lib/items-util';
 import Footer from '@/components/layout/footer';
-import About from '@/components/home-page/about';
+import About from '@/components/about/about';
 
-import Services from '@/components/home-page/services';
+import Services from '@/components/about/services';
 
 function AboutPage({ 
     contactItems,
