@@ -1,5 +1,7 @@
 import PropTypes from 'prop-types';
 import CartItem from '../home-page/carItem';
+import CarsNotFound from './carsNotFound';
+
 
 import { useState } from 'react';
 
@@ -18,11 +20,19 @@ function CarsGrid({ cars }) {
                 <CartItem key={car.slug} car={car} />
             ))}
             </div>
-           
+            {cars.length === 0?
+              
+              <CarsNotFound />
+              : null
+            }
+            
             <div className='w-full block mt-6 flex justify-center ' >
-             <button onClick={showMoreItems} className=" boxed-btn justify-center text-[18px] leading-[30px]">
+             {cars.length > visible?
+              <button onClick={showMoreItems} className=" boxed-btn justify-center text-[18px] leading-[30px]">
                 Show More     
-           </button>
+             </button>: null
+             }
+            
            </div>
         </>
     );

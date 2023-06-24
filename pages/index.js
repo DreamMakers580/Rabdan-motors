@@ -37,7 +37,6 @@ export default function Home(
             />
     <Brand brandItems={brandItems} />
     <Footer />
-    {console.log(home_products)}
     </>
   )
 }

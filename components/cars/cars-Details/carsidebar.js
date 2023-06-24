@@ -33,10 +33,10 @@ function CarSidebar({ car }) {
                 </h2>
              
                 <p class="inline-block font-semibold text-primary whitespace-nowrap leading-tight rounded-xl">
-			  <span class="text-sm uppercase">
+			  <span class="text-lg uppercase">
 				AED
 			  </span>
-			  <span class="text-lg"> 3,200</span>
+			  <span class="text-xl"> 3,200</span>
 			</p>
                 
             </div>

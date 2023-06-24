@@ -5,6 +5,7 @@ import Image from 'next/image';
 import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 import { OffcanvasData } from './offcanvas-data';
+import Logo from './logo';
 //import WhiteLogo from './white-logo';
 
 function Navbar() {
@@ -44,9 +45,10 @@ function Navbar() {
                         <div className="grid grid-cols-12 items-center leading-[120px]">
                             <div className="lg:col-span-2 col-span-6">
                                 {
-                                //<WhiteLogo />
+                                //<h1 style={{ color: 'white'}}>logo</h1>
                                 }
-                                <h1 style={{ color: 'white'}}>logo</h1>
+                                <Logo />
+                                
                             </div>
                             <div className="lg:col-span-7 lg:block hidden">
                                 <nav>
@@ -142,16 +144,7 @@ function Navbar() {
                         <ul className="offcanvas-menu-items">
                             <li className="navbar-toggle flex justify-between items-center pb-[15px]">
                                 <div className="logo" onClick={showOffcanvas}>
-                                    <Link href="/">
-                                        <a>
-                                            <Image
-                                                src="/images/logo/logo-2.png"
-                                                alt="Logo"
-                                                width={70}
-                                                height={70}
-                                            />
-                                        </a>
-                                    </Link>
+                                  
                                 </div>
                                 <button
                                     type="button"

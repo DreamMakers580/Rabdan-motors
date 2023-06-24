@@ -30,6 +30,12 @@ function Cardetails({ car }) {
         Horse_Power,
         engine_capacity,
     }] = car;
+
+    const makeThreeDigit = (number) => {
+ 
+        return number?.toLocaleString() 
+      
+    }
     
     return (
         <div className="lg:col-span-8">
@@ -37,7 +43,7 @@ function Cardetails({ car }) {
          <div className="product-detail-container w-full flex">
         <div>
           <div className="image-container">
-            <img src={urlFor(image && image[index])} className="product-detail-image md:max-w-full md:w-full md:h-[450px] h-[330px] max-w-[340px]  " />
+            <img src={urlFor(image && image[index])} className="product-detail-image md:max-w-full md:w-full md:h-[450px]  max-w-[340px]   " />
           </div>
           <div className="small-images-container">
             {image?.map((item, i) => (
@@ -72,8 +78,8 @@ function Cardetails({ car }) {
         <Cardescription title={"Fuel"} value={fuel} />
         <Cardescription title={"Seats"} value={seats} />
         <Cardescription title={"Cylinders"} value={cylinders} />
-        <Cardescription title={"Engine Capacity"} value={engine_capacity + " L"} />
-        <Cardescription title={"Horse power"} value={Horse_Power + " HP"} />
+        <Cardescription title={"Engine Capacity"} value={engine_capacity? engine_capacity + " L": ""} />
+        <Cardescription title={"Horse power"} value={Horse_Power? Horse_Power + " HP":""} />
         <Cardescription title={"Interior Color"} value={interior} />
       
 

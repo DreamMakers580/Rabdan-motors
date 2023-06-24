@@ -45,7 +45,7 @@ body {
 }
 
 .sticky-style-2 .main-menu li a span {
-  @apply before:bg-black;
+  @apply before:bg-white;
 }
 .is-sticky {
   @apply fixed transition duration-500 top-0 left-0 w-full z-20;
@@ -60,9 +60,12 @@ body {
   @apply bg-[#111111];
 }
 .sticky-style-2 {
+  @apply  bg-[#111111] text-white border-[#dfdfdf] border-b;
+}
+/*.sticky-style-2 {
   @apply bg-white border-[#dfdfdf] border-b;
 }
-
+*/
 .language-list {
   @apply flex justify-end items-center uppercase leading-8 text-[14px];
 }
@@ -250,38 +253,39 @@ body {
 
 /*------------------- test adrian css ---------------------*/
 .product-detail-container{
- gap: 40px;
- margin: 40px;
- margin-top: 60px;
- color: #324d67;
-
-}
-
-.product-detail-image{
-  border-radius: 15px;
-   background-color: #ebebeb;
+  gap: 40px;
+  margin: 40px;
+  margin-top: 60px;
+  color: #324d67;
  
-  cursor: pointer;
-  transition: .3s ease-in-out;
+ }
+ 
+ .product-detail-image{
+   border-radius: 15px;
+   background-color: #ebebeb;
+   cursor: pointer;
+   transition: .3s ease-in-out;
+ }
+ @media only screen and (max-width: 750px) {
+  
 }
-
-.small-images-container{
-  display: flex;
-  gap: 10px;
-  margin-top: 20px;
-}
-.small-image{
-  border-radius: 8px;
-  background-color: #ebebeb;
-  width: 80px;
-  height: 70px;
-  cursor: pointer;
-}
-
-.selected-image{
-  border: 5px solid #ffe1a0;
-}
-/*----------------car description------------------*/
-.description-span{
-  @apply font-medium ;
-}
+ .small-images-container{
+   display: flex;
+   gap: 10px;
+   margin-top: 20px;
+ }
+ .small-image{
+   border-radius: 8px;
+   background-color: #ebebeb;
+   width: 80px;
+   height: 70px;
+   cursor: pointer;
+ }
+ 
+ .selected-image{
+   border: 5px solid #ffe1a0;
+ }
+ /*----------------car description------------------*/
+ .description-span{
+   @apply font-medium ;
+ }

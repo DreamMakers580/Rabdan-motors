@@ -1000,6 +1000,11 @@ export const schemaTypes = [
             name: 'make',
             title: 'Make',
             type: 'string',
+            options: {
+              list: [
+                { title: "land_rover", value: "land_rover" },
+              ],
+            },
           },
           { 
             name: 'model',
@@ -1240,6 +1245,11 @@ export const schemaTypes = [
             name: 'make',
             title: 'Make',
             type: 'string',
+            options: {
+              list: [
+                { title: "mercedes_benz", value: "mercedes_benz" },
+              ],
+            },
           },
           { 
             name: 'model',

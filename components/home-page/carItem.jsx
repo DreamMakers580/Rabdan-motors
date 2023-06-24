@@ -11,10 +11,17 @@ function CartItem({ car:{
     price,
     year,
     kilometers,
-    color
+    color,
+    make
 } }) {
     //const imagePath = `/images/projects/${project?.slug}/${project?.image}`;
     //const linkPath = `/projects/${Car?.slug}`;
+    const makeThreeDigit = (number) => {
+ 
+      return number?.toLocaleString() 
+    
+  }
+  
 
     return (
         <div className={`project-item  gallery-item group ${slug.current}`}>
@@ -37,7 +44,7 @@ function CartItem({ car:{
 			  <span class="text-sm uppercase">
 				AED
 			  </span>
-			  <span class="text-lg"> 3,200</span>
+			  <span class="text-lg"> {makeThreeDigit(price)}</span>
 			</p>
 		</div>
 
@@ -47,16 +54,16 @@ function CartItem({ car:{
              //   <svg class="inline-block w-5 h-5 xl:w-4 xl:h-4 mr-3 fill-current text-gray-800" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 576 512"><path d="M570.53,242,512,190.75V48a16,16,0,0,0-16-16H400a16,16,0,0,0-16,16V78.75L298.53,4a16,16,0,0,0-21.06,0L5.47,242a16,16,0,0,0,21.07,24.09L64,233.27V464a48.05,48.05,0,0,0,48,48H464a48.05,48.05,0,0,0,48-48V233.27l37.46,32.79A16,16,0,0,0,570.53,242ZM480,464a16,16,0,0,1-16,16H112a16,16,0,0,1-16-16V205.27l192-168,192,168Zm0-301.25-64-56V64h64ZM208,218.67V325.34A26.75,26.75,0,0,0,234.66,352H341.3A26.76,26.76,0,0,0,368,325.34V218.67A26.75,26.75,0,0,0,341.3,192H234.66A26.74,26.74,0,0,0,208,218.67ZM240,224h96v96H240Z"></path></svg>
             }	
           <svg width="27" height="27" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-  <path fill="currentColor" stroke="none" d="m15.285 10.867-2.226 3.54a1.455 1.455 0 0 1-.328.328 1.412 1.412 0 0 1-1.641-2.297l3.54-2.227a.48.48 0 0 1 .547 0 .472.472 0 0 1 .108.656Z"></path>
-  <path d="M12 3C6.202 3 1.5 7.697 1.5 13.495a10.461 10.461 0 0 0 2.64 6.961c.05.056.098.113.15.164a1.182 1.182 0 0 0 1.738-.004 8.115 8.115 0 0 1 11.944 0 1.18 1.18 0 0 0 1.739.004l.15-.164a10.46 10.46 0 0 0 2.639-6.96C22.5 7.695 17.798 3 12 3Z"></path>
-  <path d="M12 6v1.5"></path>
-  <path d="M19.5 13.5H18"></path>
-  <path d="M6 13.5H4.5"></path>
-  <path d="m7.758 9.256-1.06-1.06"></path>
-  <path d="m16.242 9.256 1.061-1.06"></path>
-</svg>
-            <span class="mt-2 ml-2 xl:mt-0">
-			   {"20,000"}
+           <path fill="currentColor" stroke="none" d="m15.285 10.867-2.226 3.54a1.455 1.455 0 0 1-.328.328 1.412 1.412 0 0 1-1.641-2.297l3.54-2.227a.48.48 0 0 1 .547 0 .472.472 0 0 1 .108.656Z"></path>
+           <path d="M12 3C6.202 3 1.5 7.697 1.5 13.495a10.461 10.461 0 0 0 2.64 6.961c.05.056.098.113.15.164a1.182 1.182 0 0 0 1.738-.004 8.115 8.115 0 0 1 11.944 0 1.18 1.18 0 0 0 1.739.004l.15-.164a10.46 10.46 0 0 0 2.639-6.96C22.5 7.695 17.798 3 12 3Z"></path>
+           <path d="M12 6v1.5"></path>
+           <path d="M19.5 13.5H18"></path>
+           <path d="M6 13.5H4.5"></path>
+           <path d="m7.758 9.256-1.06-1.06"></path>
+           <path d="m16.242 9.256 1.061-1.06"></path>
+          </svg>
+      <span class="mt-2 ml-2 xl:mt-0">
+			   {makeThreeDigit(kilometers)}
 			</span>
 		  </p>
 		  <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
@@ -65,7 +72,7 @@ function CartItem({ car:{
             <path d="M12 6v6.75h4.5"></path>
            </svg>
 			<span class="mt-2 ml-2 xl:mt-0">
-			  2023
+			  {year}
 			</span>
 		  </p>
 		  <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
@@ -78,7 +85,7 @@ function CartItem({ car:{
              <path fill="currentColor" stroke="none" d="M15.375 8.25a1.5 1.5 0 1 0 0-3 1.5 1.5 0 0 0 0 3Z"></path>
           </svg>
             <span class="mt-2 ml-2 xl:mt-0">
-			  Red
+			  {color}
 			</span>
 		  </p>
 		  <p class="inline-flex flex-col xl:flex-row xl:items-center text-gray-800">
@@ -95,7 +102,7 @@ function CartItem({ car:{
             <path d="M3.656 9.89S5.83 9.329 12 9.329c6.171 0 8.344.563 8.344.563"></path>
             </svg>
             <span class="mt-2 ml-2  xl:mt-0">
-			       BMW
+			       {make}
 		       	</span>
 		  </p>
 		</div>

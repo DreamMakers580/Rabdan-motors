@@ -4,6 +4,7 @@ import { useRouter } from 'next/router';
 import { FaBars } from 'react-icons/fa';
 import { AiOutlineClose } from 'react-icons/ai';
 import { OffcanvasData } from './offcanvas-data';
+import Logo from './logo';
 
 
 function NavbarTwo() {
@@ -39,7 +40,11 @@ function NavbarTwo() {
                 <div className="custom-container container">
                     <div className="grid grid-cols-12 items-center leading-[120px]">
                         <div className="lg:col-span-2 col-span-6">
-                            <h1>logo</h1>
+                            {
+                            //<h1>logo</h1>
+                            }
+                            <Logo />
+
                         </div>
                         <div className="lg:col-span-7 lg:block hidden">
                             <nav>
@@ -135,11 +140,7 @@ function NavbarTwo() {
                         <ul className="offcanvas-menu-items">
                             <li className="navbar-toggle flex justify-between items-center pb-[15px]">
                                 <div className="logo" onClick={showOffcanvas}>
-                                    <Link href="/">
-                                        <a>
-                                           logo
-                                        </a>
-                                    </Link>
+                                   
                                 </div>
                                 <button
                                     type="button"
