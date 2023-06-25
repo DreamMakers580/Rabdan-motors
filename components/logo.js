@@ -4,11 +4,11 @@ import Image from 'next/image';
 function Logo() {
     return (
         <Link href="/">
-            <a className="inline-block  align-middle leading-[1]">
+            <a className="inline-block align-middle leading-[1]">
                 <Image
                     src="/images/rabdanlogo.png"
                     alt="Logo"
-                    width={110}
+                    width={120}
                     height={80}
                 />
             </a>

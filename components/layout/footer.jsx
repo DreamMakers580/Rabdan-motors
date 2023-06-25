@@ -15,7 +15,7 @@ const Footer = () => {
  // const GoogleIcon = FaIcons[heroItem?.googleIcon];
 
   return (
-<footer className="relative bg-blueGray-200 pt-10 pb-6">
+<footer className="relative bg-blueGray-200 md:pt-14 pt-10 pb-6">
   <div className="container mx-auto px-4">
     <div className="flex flex-wrap text-left lg:text-left">
       <div className="w-full lg:w-6/12 px-4">
@@ -86,7 +86,7 @@ const Footer = () => {
       <div className="w-full md:w-4/12 px-4 mx-auto text-center">
         <div className="text-sm text-blueGray-500 font-semibold py-1">
            © <span id="get-current-year">2023</span><a className="text-blueGray-500 hover:text-gray-800" target="_blank" > Rabdan Motors Powerd by </a>
-          <a href="https://www.creative-tim.com?ref=njs-profile" className="text-blueGray-500 hover:text-blueGray-800">Dream makers</a>.
+          <a href="/" className="text-blueGray-500 hover:text-blueGray-800">Dream makers</a>.
         </div>
       </div>
     </div>

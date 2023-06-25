@@ -36,7 +36,7 @@ function AboutInAbout() {
                        
                         <div className="button-wrap pt-[20px]">
                             <Link href="/cars">
-                                <a className="inline-flex items-center text-[14px] leading-[30px] p-[11px_32px] transition duration-[0.4s] border border-[#969696] uppercase hover:border-black hover:bg-transparent hover:text-black bg-black text-white">
+                                <a className="inline-flex items-center text-[14px] leading-[30px] p-[11px_32px] transition duration-[0.4s] border border-[#969696] uppercase border-black hover:border-primary hover:bg-primary hover:text-white bg-transparent text-black">
                                     View Our Cars
                                     <div className="ml-[5px]">
                                         <AiOutlineRight />
