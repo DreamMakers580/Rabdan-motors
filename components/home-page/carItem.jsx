@@ -12,7 +12,8 @@ function CartItem({ car:{
     year,
     kilometers,
     color,
-    make
+    make,
+    stock
 } }) {
     //const imagePath = `/images/projects/${project?.slug}/${project?.image}`;
     //const linkPath = `/projects/${Car?.slug}`;
@@ -65,6 +66,9 @@ function CartItem({ car:{
 		  <h2 class="font-medium text-base md:text-lg text-gray-800 line-clamp-1" title="New York">
 			{name}
 		  </h2>
+      <h3 class="font-medium text-base float-right md:text-lg text-gray-800 line-clamp-1" title="New York">
+			 {stock === 0 || stock === "0" ?  <span className='text-red-500' >Out of Stock</span>  : <span>Stock : {stock}</span> }
+		  </h3>
 		  <p class="inline-block font-semibold text-primary whitespace-nowrap leading-tight rounded-xl">
 			  <span class="text-sm uppercase">
 				AED

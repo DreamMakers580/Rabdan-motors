@@ -13,6 +13,7 @@ function Cardetails({ car }) {
         name , 
         price, 
         description,
+        stock,
         kilometers,
         make,
         model,

@@ -7,7 +7,7 @@ heroYear: 2023
 twitterIcon: 'FaInstagram'
 facebookIcon: 'FaFacebookF'
 googleIcon: 'FaTiktok'
-heroCategory: Rabdan Motors <br /> studio
+heroCategory: Car Dealership
 heroTitle: Rabdan <br /> Motors
 heroContactInfo: info@RabdanMotors.co
 ---

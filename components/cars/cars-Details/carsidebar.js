@@ -11,6 +11,7 @@ function CarSidebar({ car }) {
         price, 
         description,
         kilometers,
+        stock,
         make,
         model,
         year,
@@ -52,6 +53,14 @@ function CarSidebar({ car }) {
                 </h2>
                 <p className="post-list">
                     {description}
+                </p>
+            </div>
+            <div className="post-sidebar-item mt-[50px]">
+                <h2 className="text-[20px] font-bold text-[#222] border-[#eee] border-b pb-[11px] mb-[20px]">
+                    Stock
+                </h2>
+                <p className="post-list">
+                {stock === 0 || stock === "0" ?  <span className='text-red-500' >Out of Stock</span>  : <span>Stock : {stock}</span> }
                 </p>
             </div>
             <div className="post-sidebar-item post-sidebar-item mt-[50px]">

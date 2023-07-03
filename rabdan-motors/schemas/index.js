@@ -33,6 +33,11 @@ export const schemaTypes = [
         type: 'number',
       },
       { 
+        name: 'stock',
+        title: 'Stock',
+        type: 'number',
+      },
+      { 
         name: 'description',
         title: 'Description',
         type: 'string',
@@ -150,6 +155,11 @@ export const schemaTypes = [
           { 
             name: 'price',
             title: 'Price',
+            type: 'number',
+          },
+          { 
+            name: 'stock',
+            title: 'Stock',
             type: 'number',
           },
           { 
@@ -273,6 +283,11 @@ export const schemaTypes = [
             type: 'number',
           },
           { 
+            name: 'stock',
+            title: 'Stock',
+            type: 'number',
+          },
+          { 
             name: 'description',
             title: 'Description',
             type: 'string',
@@ -390,6 +405,11 @@ export const schemaTypes = [
           { 
             name: 'price',
             title: 'Price',
+            type: 'number',
+          },
+          { 
+            name: 'stock',
+            title: 'Stock',
             type: 'number',
           },
           { 
@@ -513,6 +533,11 @@ export const schemaTypes = [
             type: 'number',
           },
           { 
+            name: 'stock',
+            title: 'Stock',
+            type: 'number',
+          },
+          { 
             name: 'description',
             title: 'Description',
             type: 'string',
@@ -630,6 +655,11 @@ export const schemaTypes = [
           { 
             name: 'price',
             title: 'Price',
+            type: 'number',
+          },
+          { 
+            name: 'stock',
+            title: 'Stock',
             type: 'number',
           },
           { 
@@ -753,6 +783,11 @@ export const schemaTypes = [
             type: 'number',
           },
           { 
+            name: 'stock',
+            title: 'Stock',
+            type: 'number',
+          },
+          { 
             name: 'description',
             title: 'Description',
             type: 'string',
@@ -872,6 +907,11 @@ export const schemaTypes = [
             type: 'number',
           },
           { 
+            name: 'stock',
+            title: 'Stock',
+            type: 'number',
+          },
+          { 
             name: 'description',
             title: 'Description',
             type: 'string',
@@ -984,6 +1024,11 @@ export const schemaTypes = [
           { 
             name: 'price',
             title: 'Price',
+            type: 'number',
+          },
+          { 
+            name: 'stock',
+            title: 'Stock',
             type: 'number',
           },
           { 
@@ -1112,6 +1157,11 @@ export const schemaTypes = [
             type: 'number',
           },
           { 
+            name: 'stock',
+            title: 'Stock',
+            type: 'number',
+          },
+          { 
             name: 'description',
             title: 'Description',
             type: 'string',
@@ -1229,6 +1279,11 @@ export const schemaTypes = [
           { 
             name: 'price',
             title: 'Price',
+            type: 'number',
+          },
+          { 
+            name: 'stock',
+            title: 'Stock',
             type: 'number',
           },
           { 
@@ -1357,6 +1412,11 @@ export const schemaTypes = [
             type: 'number',
           },
           { 
+            name: 'stock',
+            title: 'Stock',
+            type: 'number',
+          },
+          { 
             name: 'description',
             title: 'Description',
             type: 'string',
@@ -1474,6 +1534,11 @@ export const schemaTypes = [
           { 
             name: 'price',
             title: 'Price',
+            type: 'number',
+          },
+          { 
+            name: 'stock',
+            title: 'Stock',
             type: 'number',
           },
           { 
@@ -1597,6 +1662,11 @@ export const schemaTypes = [
             type: 'number',
           },
           { 
+            name: 'stock',
+            title: 'Stock',
+            type: 'number',
+          },
+          { 
             name: 'description',
             title: 'Description',
             type: 'string',
@@ -1717,6 +1787,11 @@ export const schemaTypes = [
             type: 'number',
           },
           { 
+            name: 'stock',
+            title: 'Stock',
+            type: 'number',
+          },
+          { 
             name: 'description',
             title: 'Description',
             type: 'string',
@@ -1834,6 +1909,11 @@ export const schemaTypes = [
           { 
             name: 'price',
             title: 'Price',
+            type: 'number',
+          },
+          { 
+            name: 'stock',
+            title: 'Stock',
             type: 'number',
           },
           { 
@@ -1962,6 +2042,11 @@ export const schemaTypes = [
             type: 'number',
           },
           { 
+            name: 'stock',
+            title: 'Stock',
+            type: 'number',
+          },
+          { 
             name: 'description',
             title: 'Description',
             type: 'string',
@@ -2082,6 +2167,11 @@ export const schemaTypes = [
             type: 'number',
           },
           { 
+            name: 'stock',
+            title: 'Stock',
+            type: 'number',
+          },
+          { 
             name: 'description',
             title: 'Description',
             type: 'string',
@@ -2199,6 +2289,11 @@ export const schemaTypes = [
           { 
             name: 'price',
             title: 'Price',
+            type: 'number',
+          },
+          { 
+            name: 'stock',
+            title: 'Stock',
             type: 'number',
           },
           { 

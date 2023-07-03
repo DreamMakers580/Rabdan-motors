@@ -54,6 +54,7 @@ module.exports = {
       fontFamily: {
           inter: ['Inter, sans-serif'],
           heebo: ['Heebo, sans-serif'],
+          archivo: ['Archivo-Black, sans-serif'],
       },
 
       container: {

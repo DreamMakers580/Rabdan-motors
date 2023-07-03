@@ -98,15 +98,15 @@ function Hero({ heroItems, settings }) {
                                             }}
                                         />
                                         <h2
-                                            className="md:text-[100px] md:leading-[100px] text-[50px] leading-[1.2] text-white mb-[90px] hero-slidedown delay-[600ms]"
+                                            className="font-archivo md:text-[100px] md:leading-[100px] text-[50px] leading-[1.2] text-white mb-[90px] hero-slidedown delay-[600ms]"
                                             dangerouslySetInnerHTML={{
                                                 __html: heroItem?.heroTitle,
                                             }}
                                         />
                                         <div className="hero-slidedown delay-[1200ms]">
-                                            <Link href="/about">
+                                            <Link href="/cars">
                                                 <a className="boxed-btn text-[18px] leading-[30px]">
-                                                    More About Us
+                                                    View Our Cars
                                                 </a>
                                             </Link>
                                         </div>
