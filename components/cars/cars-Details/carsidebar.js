@@ -84,7 +84,7 @@ function CarSidebar({ car }) {
 
             <div className='w-full block mt-6 flex justify-center ' >
              <button className=" boxed-btn justify-center text-[18px] leading-[30px]">
-                Call Us    
+               <a href='tel:+971-5080-30173'>Call Us</a>     
            </button>
            </div>
 
