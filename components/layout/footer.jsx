@@ -67,13 +67,13 @@ const Footer = () => {
             <span className="block uppercase text-blueGray-500 text-lg font-semibold mb-2">Privacy</span>
             <ul className="list-unstyled">
               <li>
-                <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/">Privacy Policy</a>
+                <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/privacy/privacy-policy">Privacy Policy</a>
               </li>
               <li>
-                <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/">Terms and Conditions</a>
+                <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/privacy/terms-conditions">Terms and Conditions</a>
               </li>
               <li>
-                <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/">Privacy Policy</a>
+                <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/privacy/disclaimers">Disclaimers</a>
               </li>
               
             </ul>
@@ -86,7 +86,7 @@ const Footer = () => {
       <div className="w-full md:w-4/12 px-4 mx-auto text-center">
         <div className="text-sm text-blueGray-500 font-semibold py-1">
            © <span id="get-current-year">2023</span><a className="text-blueGray-500 hover:text-gray-800" target="_blank" > Rabdan Motors Powerd by </a>
-          <a href="https://dm-marketing.ae" className="text-blueGray-500 hover:text-blueGray-800">Dream makers</a>.
+          <a href="https://dm-marketing.ae" className="text-blueGray-500 hover:text-blueGray-800">Dream Makers</a>.
         </div>
       </div>
     </div>
