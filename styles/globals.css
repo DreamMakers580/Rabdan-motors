@@ -21,6 +21,7 @@
 
 body {
   background-color: white;
+  scroll-behavior: smooth;
 }
 .custom-container {
   @apply xl:max-w-full xl:px-[70px] px-[15px];

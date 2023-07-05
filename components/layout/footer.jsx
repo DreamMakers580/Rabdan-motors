@@ -67,13 +67,13 @@ const Footer = () => {
             <span className="block uppercase text-blueGray-500 text-lg font-semibold mb-2">Privacy</span>
             <ul className="list-unstyled">
               <li>
-                <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/">Privacy Policy</a>
+                <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/privacy/privacy-policy">Privacy Policy</a>
               </li>
               <li>
-                <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/">Terms and Conditions</a>
+                <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/privacy/terms-conditions">Terms and Conditions</a>
               </li>
               <li>
-                <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/">Privacy Policy</a>
+                <a className="text-blueGray-600 hover:text-blueGray-800 font-semibold block pb-2 text-sm" href="/privacy/disclaimers">Disclaimers</a>
               </li>
               
             </ul>

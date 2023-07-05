@@ -8,6 +8,6 @@ twitterIcon: 'FaInstagram'
 facebookIcon: 'FaFacebookF'
 googleIcon: 'FaTiktok'
 heroCategory: Car Dealership
-heroTitle: Rabdan <br /> Motors
-heroContactInfo: info@RabdanMotors.co
+heroTitle: RABDAN <br /> MOTORS
+heroContactInfo: info@RabdanMotors.ae
 ---
