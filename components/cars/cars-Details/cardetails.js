@@ -90,11 +90,10 @@ function Cardetails({ car }) {
         </h1>
         <div className="grid px-[35px] lm:grid-cols-2 mt-12 gap-x-[25px] gap-y-[55px]">
 
-           
-        <Cardescription title={"kilometers"} value={makeThreeDigit(kilometers)} />
-        <Cardescription title={"Make"} value={rewrightMakeItemsToString(make)} />
+        <Cardescription title={"Make"} value={rewrightMakeItemsToString(make)} />   
         <Cardescription title={"Model"} value={model} />
         <Cardescription title={"Year"} value={year} />
+        <Cardescription title={"kilometers"} value={makeThreeDigit(kilometers)} />
         <Cardescription title={"Exterior Color"} value={color} />
         <Cardescription title={"Drive Train"} value={drive_train} />
         <Cardescription title={"Vehicle type"} value={vehicle_type} />

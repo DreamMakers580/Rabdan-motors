@@ -9,5 +9,5 @@ facebookIcon: 'FaFacebookF'
 googleIcon: 'FaTiktok'
 heroCategory: Car Dealership
 heroTitle: RABDAN <br /> MOTORS
-heroContactInfo: info@RabdanMotors.ae
+heroContactInfo: contact@RabdanMotors.ae
 ---

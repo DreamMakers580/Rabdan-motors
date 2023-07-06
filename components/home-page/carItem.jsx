@@ -66,15 +66,19 @@ function CartItem({ car:{
 		  <h2 class="font-medium text-base md:text-lg text-gray-800 line-clamp-1" title="New York">
 			{name}
 		  </h2>
-      <h3 class="font-medium text-base float-right md:text-lg text-gray-800 line-clamp-1" title="New York">
-			 {stock === 0 || stock === "0" ?  <span className='text-red-500' >Out of Stock</span>  : <span>Stock : {stock}</span> }
-		  </h3>
-		  <p class="inline-block font-semibold text-primary whitespace-nowrap leading-tight rounded-xl">
+      <div className='grid grid-cols-2 grid-rows-1 gap-4 mt-8'>
+      <p class="inline-block font-semibold text-primary whitespace-nowrap leading-tight rounded-xl">
 			  <span class="text-sm uppercase">
 				AED
 			  </span>
 			  <span class="text-lg"> {makeThreeDigit(price)}</span>
 			</p>
+     
+      <h3 class=" inline-flex flex-col xl:flex-row xl:items-center font-medium text-base md:text-lg text-gray-800 line-clamp-1" title="New York">
+			 {stock === 0 || stock === "0" ?  <span className='text-red-500' >Out of Stock</span>  : <span>Stock : {stock}</span> }
+		  </h3>
+		  
+      </div>
 		</div>
 
 		<div class="grid grid-cols-2 grid-rows-2 gap-4 mt-8">

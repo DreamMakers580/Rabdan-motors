@@ -26,6 +26,7 @@ function Hero({ heroItems, settings }) {
                 const TwitterIcon = FaIcons[heroItem?.twitterIcon];
                 const FacebookIcon = FaIcons[heroItem?.facebookIcon];
                 const GoogleIcon = FaIcons[heroItem?.googleIcon];
+                
                 return (
                     <Slide className="hero-item" key={heroItem.id}>
                         <div className={`${heroImage}  md:flex hidden`}>
@@ -114,7 +115,7 @@ function Hero({ heroItems, settings }) {
                                 </div>
                             </div>
                             <div className="info text-white hover:text-primary transition-all text-[14px] uppercase absolute bottom-[100px] sm:right-[70px] right-auto z-[2]">
-                                <Link href="tel:+contact@Rustictudio.co">
+                                <Link href={`mailto:${heroItem?.heroContactInfo}`}>
                                     {heroItem?.heroContactInfo}
                                 </Link>
                             </div>
