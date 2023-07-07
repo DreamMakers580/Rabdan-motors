@@ -1,7 +1,7 @@
 ---
 title: 'Contact'
-subTitle: 'Dubai, <span class="text-[#6F6969]"> Example</span>'
-address: 'No. 1002, Dahill Rd Str, Borough Park,  9982, Dubai'
+subTitle: 'United Arab Emirates , Dubai'
+address: ' Al Ruqa Al Hamra - Sharjah - United Arab Emirates'
 contactNumberPath: 'tel:+971-50-803-0173'
 contactNumber: '(+971) 50-803-0173'
 contactEmailPath: 'mailto:contact@RabdanMotors.ae'
