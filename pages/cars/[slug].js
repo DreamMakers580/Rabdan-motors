@@ -31,7 +31,7 @@ function carsDetails({
    
   const handleSlugfilter = (array) => {
   
-    return array.filter( (car) => car.slug.current === currentSlug ); 
+    return array.filter( (car) => car.slug?.current === currentSlug ); 
   }
   const [allcars, setAllcars] = useState(
     [
@@ -539,7 +539,7 @@ export const getStaticPaths = async () => {
 
   return {
     paths:arr,
-    fallback: "blocking",
+    fallback: false,
   }
 }
 
