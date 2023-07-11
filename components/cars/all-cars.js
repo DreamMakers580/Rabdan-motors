@@ -136,7 +136,7 @@ const handlePriceAboveFilter = (array) => {
             <option  value="mercedes_benz">Mercedes Benz</option>
             <option  value="porsche">Porsche</option>
             <option  value="tesla">Tesla</option>
-            <option  value="rolls_roys">Mercedes Benz</option>
+            <option  value="rolls_roys">Rolls Roys</option>
             <option  value="alfa_romeo">Alfa Romeo</option>
             <option  value="ferrari">Ferrari</option>
             <option  value="lamborgini">Lamborgini</option>

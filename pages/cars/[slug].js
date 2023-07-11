@@ -61,7 +61,7 @@ function carsDetails({
 // console.log(" this car is " + array);
  const [CurrentCar, setCurrentCar] = useState(array);
 
- console.log("seif seif adsadfcabdcv" +JSON.stringify(CurrentCar) );
+ //console.log("seif seif adsadfcabdcv" +JSON.stringify(CurrentCar) );
  
   useEffect(() => {
     //console.log(" this array car is " +array);
@@ -610,9 +610,6 @@ export const getStaticProps = async ({ params: { slug }}) => {
       lamborgini,
       ferrari,
       alfa_romeo,
-
-
-      
 
     }
   }
