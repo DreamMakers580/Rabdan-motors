@@ -7,6 +7,7 @@ import CarContent from "@/components/cars/cars-Details/car-content";
 
 import { client, urlFor } from '../../lib/client';
 
+import { useRouter } from 'next/router'
 
 function carsDetails({
   home_products,
@@ -82,16 +83,27 @@ function carsDetails({
 
    console.log("the image is"+image);
 
-  return (
-    <>
-    <NavbarTwo />
+   const router = useRouter()
+   
+
+   if (router.isFallback) {
+    return <div> Loading...</div>
+    }else{
+      return (
+        <>
+    
+        <NavbarTwo />
+      
+       <CarContent car={CurrentCar} />
+       
+       
+       <Footer />
+        </>
+      )
+    }
+
+
   
-   <CarContent car={CurrentCar} />
-   
-   
-   <Footer />
-    </>
-  )
 }
 
 export const getStaticPaths = async () => {
