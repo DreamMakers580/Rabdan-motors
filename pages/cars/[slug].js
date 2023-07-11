@@ -539,7 +539,7 @@ export const getStaticPaths = async () => {
 
   return {
     paths:arr,
-    fallback: false,
+    fallback: false
   }
 }
 
