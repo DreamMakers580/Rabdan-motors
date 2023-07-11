@@ -90,7 +90,7 @@ function carsDetails({
     return <div> Loading...</div>
     }
 
-    
+
       return (
         <>
     
@@ -102,7 +102,7 @@ function carsDetails({
        <Footer />
         </>
       )
-    }
+    
 
 
   
