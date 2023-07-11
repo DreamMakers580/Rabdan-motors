@@ -58,7 +58,7 @@ function CartItem({ car:{
 	  <div class="shadow p-4 rounded-lg bg-white">
 		<div class="flex justify-center relative rounded-lg overflow-hidden h-52">
 		  <div class="transition-transform duration-500 transform ease-in-out hover:scale-110 w-full">
-			<img src={urlFor(image && image[0])} />
+			<img src={urlFor(image && image[0] )} />
 		  </div>
 		</div>
 

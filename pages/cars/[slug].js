@@ -7,6 +7,7 @@ import CarContent from "@/components/cars/cars-Details/car-content";
 
 import { client, urlFor } from '../../lib/client';
 
+import { useRouter } from 'next/router'
 
 function carsDetails({
   home_products,
@@ -30,7 +31,7 @@ function carsDetails({
    
   const handleSlugfilter = (array) => {
   
-    return array.filter( (car) => car.slug.current === currentSlug ); 
+    return array.filter( (car) => car.slug?.current === currentSlug ); 
   }
   const [allcars, setAllcars] = useState(
     [
@@ -81,17 +82,28 @@ function carsDetails({
    //const {image} = first; 
 
    console.log("the image is"+image);
-
-  return (
-    <>
-    <NavbarTwo />
   
-   <CarContent car={CurrentCar} />
+  
    
-   
-   <Footer />
-    </>
-  )
+
+      return (
+        <>
+
+        
+            <NavbarTwo />
+      
+            <CarContent car={CurrentCar} />
+            
+            
+            <Footer />
+            </>
+      
+      
+      )
+    
+
+
+  
 }
 
 export const getStaticPaths = async () => {
