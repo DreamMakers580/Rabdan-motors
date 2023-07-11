@@ -88,7 +88,9 @@ function carsDetails({
 
    if (router.isFallback) {
     return <div> Loading...</div>
-    }else{
+    }
+
+    
       return (
         <>
     
