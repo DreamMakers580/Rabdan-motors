@@ -83,23 +83,25 @@ function carsDetails({
 
    console.log("the image is"+image);
 
-   const router = useRouter()
-   
-
-   if (router.isFallback) {
-    return <div> Loading...</div>
-    }
-
+ 
 
       return (
         <>
-    
-        <NavbarTwo />
+
+        {
+          allcars && (
+            <>
+            <NavbarTwo />
       
-       <CarContent car={CurrentCar} />
+            <CarContent car={CurrentCar} />
+            
+            
+            <Footer />
+            </>
+          )
+        }
+    
        
-       
-       <Footer />
         </>
       )
     
@@ -541,7 +543,7 @@ export const getStaticPaths = async () => {
 
   return {
     paths:arr,
-    fallback: true
+    fallback: "blocking"
   }
 }
 
