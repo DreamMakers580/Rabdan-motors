@@ -50,8 +50,8 @@ function CartItem({ car:{
   
 
     return (
-        <div className={`project-item  gallery-item group ${slug.current}`}>
-            <Link href={`/cars/${slug.current}`}>
+        <div className={`project-item  gallery-item group ${slug?.current}`}>
+            <Link href={`/cars/${slug?.current}`}>
                 <a>
                 <div class="relative mx-auto w-full">
 	<a href="#" class="relative inline-block duration-300 ease-in-out transition-transform transform hover:-translate-y-2 w-full">
