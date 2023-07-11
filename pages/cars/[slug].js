@@ -84,10 +84,7 @@ function carsDetails({
    console.log("the image is"+image);
   
   
-   if (router.isFallback) {
-    return <div>Loading...</div>
-  }
- 
+   
 
       return (
         <>
@@ -542,7 +539,7 @@ export const getStaticPaths = async () => {
 
   return {
     paths:arr,
-    fallback: "blocking"
+    fallback: "blocking",
   }
 }
 
