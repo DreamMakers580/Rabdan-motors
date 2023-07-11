@@ -50,15 +50,15 @@ function CartItem({ car:{
   
 
     return (
-        <div className={`project-item  gallery-item group ${slug.current}`}>
-            <Link href={`/cars/${slug.current}`}>
+        <div className={`project-item  gallery-item group ${slug?.current}`}>
+            <Link href={`/cars/${slug?.current}`}>
                 <a>
                 <div class="relative mx-auto w-full">
 	<a href="#" class="relative inline-block duration-300 ease-in-out transition-transform transform hover:-translate-y-2 w-full">
 	  <div class="shadow p-4 rounded-lg bg-white">
 		<div class="flex justify-center relative rounded-lg overflow-hidden h-52">
 		  <div class="transition-transform duration-500 transform ease-in-out hover:scale-110 w-full">
-			<img src={urlFor(image && image[0])} />
+			<img src={urlFor(image && image[0] )} />
 		  </div>
 		</div>
 

@@ -82,15 +82,17 @@ function carsDetails({
    //const {image} = first; 
 
    console.log("the image is"+image);
-
+  
+  
+   if (router.isFallback) {
+    return <div>Loading...</div>
+  }
  
 
       return (
         <>
 
-        {
-          allcars && (
-            <>
+        
             <NavbarTwo />
       
             <CarContent car={CurrentCar} />
@@ -98,11 +100,8 @@ function carsDetails({
             
             <Footer />
             </>
-          )
-        }
-    
-       
-        </>
+      
+      
       )
     
 
