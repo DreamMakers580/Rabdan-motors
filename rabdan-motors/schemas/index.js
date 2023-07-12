@@ -138,7 +138,6 @@ export const schemaTypes = [
             options: {
               hotspot: true,
             },
-            validation: Rule => Rule.required().error('You must put an image'),
             validation: Rule => Rule.required().error('You must put an image')
           },
           { 
