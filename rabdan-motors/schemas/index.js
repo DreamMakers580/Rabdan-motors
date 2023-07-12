@@ -11,7 +11,8 @@ export const schemaTypes = [
         of: [{ type: 'image' }],
         options: {
           hotspot: true,
-        }
+        },
+        validation: Rule => Rule.required().error('You must put an image')
       }, 
       { 
         name: 'name',
@@ -136,7 +137,9 @@ export const schemaTypes = [
             of: [{ type: 'image' }],
             options: {
               hotspot: true,
-            }
+            },
+            validation: Rule => Rule.required().error('You must put an image'),
+            validation: Rule => Rule.required().error('You must put an image')
           },
           { 
             name: 'name',
@@ -261,7 +264,8 @@ export const schemaTypes = [
             of: [{ type: 'image' }],
             options: {
               hotspot: true,
-            }
+            },
+            validation: Rule => Rule.required().error('You must put an image')
           },
           { 
             name: 'name',
@@ -386,7 +390,8 @@ export const schemaTypes = [
             of: [{ type: 'image' }],
             options: {
               hotspot: true,
-            }
+            },
+            validation: Rule => Rule.required().error('You must put an image')
           },
           { 
             name: 'name',
@@ -511,7 +516,8 @@ export const schemaTypes = [
             of: [{ type: 'image' }],
             options: {
               hotspot: true,
-            }
+            },
+            validation: Rule => Rule.required().error('You must put an image')
           },
           { 
             name: 'name',
@@ -636,7 +642,8 @@ export const schemaTypes = [
             of: [{ type: 'image' }],
             options: {
               hotspot: true,
-            }
+            },
+            validation: Rule => Rule.required().error('You must put an image')
           },
           { 
             name: 'name',
@@ -761,7 +768,8 @@ export const schemaTypes = [
             of: [{ type: 'image' }],
             options: {
               hotspot: true,
-            }
+            },
+            validation: Rule => Rule.required().error('You must put an image')
           },
           { 
             name: 'name',
@@ -885,7 +893,8 @@ export const schemaTypes = [
             of: [{ type: 'image' }],
             options: {
               hotspot: true,
-            }
+            },
+            validation: Rule => Rule.required().error('You must put an image')
           },
           { 
             name: 'name',
@@ -1005,7 +1014,8 @@ export const schemaTypes = [
             of: [{ type: 'image' }],
             options: {
               hotspot: true,
-            }
+            },
+            validation: Rule => Rule.required().error('You must put an image')
           },
           { 
             name: 'name',
@@ -1135,7 +1145,8 @@ export const schemaTypes = [
             of: [{ type: 'image' }],
             options: {
               hotspot: true,
-            }
+            },
+            validation: Rule => Rule.required().error('You must put an image')
           },
           { 
             name: 'name',
@@ -1260,7 +1271,8 @@ export const schemaTypes = [
             of: [{ type: 'image' }],
             options: {
               hotspot: true,
-            }
+            },
+            validation: Rule => Rule.required().error('You must put an image')
           },
           { 
             name: 'name',
@@ -1390,7 +1402,8 @@ export const schemaTypes = [
             of: [{ type: 'image' }],
             options: {
               hotspot: true,
-            }
+            },
+            validation: Rule => Rule.required().error('You must put an image')
           },
           { 
             name: 'name',
@@ -1515,7 +1528,8 @@ export const schemaTypes = [
             of: [{ type: 'image' }],
             options: {
               hotspot: true,
-            }
+            },
+            validation: Rule => Rule.required().error('You must put an image')
           },
           { 
             name: 'name',
@@ -1640,7 +1654,8 @@ export const schemaTypes = [
             of: [{ type: 'image' }],
             options: {
               hotspot: true,
-            }
+            },
+            validation: Rule => Rule.required().error('You must put an image')
           },
           { 
             name: 'name',
@@ -1765,7 +1780,8 @@ export const schemaTypes = [
             of: [{ type: 'image' }],
             options: {
               hotspot: true,
-            }
+            },
+            validation: Rule => Rule.required().error('You must put an image')
           },
           { 
             name: 'name',
@@ -1890,7 +1906,8 @@ export const schemaTypes = [
             of: [{ type: 'image' }],
             options: {
               hotspot: true,
-            }
+            },
+            validation: Rule => Rule.required().error('You must put an image')
           },
           { 
             name: 'name',
@@ -2020,7 +2037,8 @@ export const schemaTypes = [
             of: [{ type: 'image' }],
             options: {
               hotspot: true,
-            }
+            },
+            validation: Rule => Rule.required().error('You must put an image')
           },
           { 
             name: 'name',
@@ -2145,7 +2163,8 @@ export const schemaTypes = [
             of: [{ type: 'image' }],
             options: {
               hotspot: true,
-            }
+            },
+            validation: Rule => Rule.required().error('You must put an image')
           },
           { 
             name: 'name',
@@ -2270,7 +2289,8 @@ export const schemaTypes = [
             of: [{ type: 'image' }],
             options: {
               hotspot: true,
-            }
+            },
+            validation: Rule => Rule.required().error('You must put an image')
           },
           { 
             name: 'name',
