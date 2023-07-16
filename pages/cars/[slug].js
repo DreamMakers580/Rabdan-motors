@@ -81,7 +81,7 @@ function carsDetails({
    const [{image}] = CurrentCar; 
    //const {image} = first; 
 
-   console.log("the image is"+image);
+   //console.log("the image is"+image);
   
   
    

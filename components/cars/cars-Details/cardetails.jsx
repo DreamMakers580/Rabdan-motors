@@ -2,10 +2,16 @@ import PropTypes from 'prop-types';
 
 import { urlFor } from '@/lib/client';
 
+import dynamic from 'next/dynamic';
+import { Slide } from '@/components/swiper';
+
+
 import React, { useState } from 'react';
 import Cardescription from './cardescription';
 
-function Cardetails({ car }) {
+import ImageSmallItem from './ImageSmallItem';
+
+function Cardetails({ car , settings }) {
     const [index, setIndex] = useState(0);
     
     const [{
@@ -31,6 +37,32 @@ function Cardetails({ car }) {
         Horse_Power,
         engine_capacity,
     }] = car;
+
+    const SwiperComps = dynamic(() => import('@/components/swiper'), {
+      ssr: false,
+  });
+  settings = {
+    pagination: { clickable: true, type: 'bullets' },
+    spaceBetween: 4,
+    breakpoints: {
+      450: {
+        slidesPerView: 5,
+        },
+        350: {
+            slidesPerView: 4,
+       },
+        250: {
+            slidesPerView: 3,
+        },
+        100: {
+            slidesPerView: 2,
+        },
+        0: {
+            slidesPerView: 1,
+        },
+    },
+};
+
 
     function rewrightMakeItemsToString(string) {
       switch (string) {
@@ -66,20 +98,27 @@ function Cardetails({ car }) {
     return (
         <div className="lg:col-span-8">
         <div className=" w-full flex justify-center">
-         <div className="product-detail-container w-full flex">
+         <div className="product-detail-container md:pl-6 w-full flex">
         <div>
           <div className="image-container">
-            <img src={urlFor(image && image[index])} className="product-detail-image md:max-w-full md:w-full md:h-[450px]  max-w-[340px]   " />
+            <img src={urlFor(image && image[index])} className="product-detail-image md:max-w-full  md:h-[450px]  max-w-[340px]   " />
           </div>
           <div className="small-images-container">
-            {image?.map((item, i) => (
+          <SwiperComps settings={settings}>
+             {image?.map((item, i) => (
+              <Slide key={i}>
               <img 
                 key={i}
                 src={urlFor(item)}
                 className={i === index ? 'small-image selected-image' : 'small-image'}
-                onMouseEnter={() => setIndex(i)}
+                //onMouseEnter={() => setIndex(i)}
+                onClick={() => setIndex(i)}
               />
+             </Slide>
+             
             ))}
+        </SwiperComps>
+           
           </div>
         </div>
             </div>
@@ -115,6 +154,12 @@ function Cardetails({ car }) {
 
 Cardetails.propTypes = {
     car: PropTypes.instanceOf(Object).isRequired,
+    settings: PropTypes.shape({
+      slidesPerView: PropTypes.number,
+      spaceBetween: PropTypes.number,
+      breakpoints: PropTypes.shape({}),
+  }),
 };
 
 export default Cardetails;
+
