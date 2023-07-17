@@ -1,6 +1,6 @@
 import PropTypes from 'prop-types';
 import Link from 'next/link';
-//import Image from 'next/image';
+import Image from 'next/image';
 
 import { urlFor } from '@/lib/client';
 
@@ -47,8 +47,7 @@ function CartItem({ car:{
         break;
     }
   }
-  
-
+  console.log("in the car itemmmm " + JSON.stringify(image))
     return (
         <div className={`project-item  gallery-item group ${slug?.current}`}>
             <Link href={`/cars/${slug?.current}`}>
@@ -58,8 +57,10 @@ function CartItem({ car:{
 	  <div class="shadow p-4 rounded-lg bg-white">
 		<div class="flex justify-center relative rounded-lg overflow-hidden h-52">
 		  <div class="transition-transform duration-500 transform ease-in-out hover:scale-110 w-full">
-			<img src={urlFor(image && image[0] )} />
-		  </div>
+			
+        <img src={urlFor(image && image[0])} />
+     
+        </div>
 		</div>
 
 		<div class="mt-4">
