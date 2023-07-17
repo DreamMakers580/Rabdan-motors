@@ -39,11 +39,11 @@ function CarSidebar({ car }) {
                     {name}
                 </h2>
              
-                <p class="inline-block font-semibold text-primary whitespace-nowrap leading-tight rounded-xl">
-			  <span class="text-lg uppercase">
+                <p className="inline-block font-semibold text-primary whitespace-nowrap leading-tight rounded-xl">
+			  <span className="text-lg uppercase">
 				AED
 			  </span>
-			  <span class="text-xl"> {makeThreeDigit(price)}</span>
+			  <span className="text-xl"> {makeThreeDigit(price)}</span>
 			</p>
                 
             </div>
