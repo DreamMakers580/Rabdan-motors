@@ -23,6 +23,7 @@ module.exports = {
           },
           backgroundImage: {
             'pattern-1': "url('/images/background/pattern-1.png')",
+            //'wp-image': "url('/images/background/whatsapp.svg')",
             'page-banner-1': "url('/images/page-banner/1.jpg')",
             'page-banner-2': "url('/images/page-banner/2.jpeg')",
           },
