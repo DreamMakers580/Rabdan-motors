@@ -9,6 +9,8 @@ import Testimonial from '@/components/home-page/testimonial';
 import Brand from '@/components/home-page/brand';
 import Footer from '@/components/layout/footer';
 
+import WhatsAppIcon from "../components/whatsapp/whatsAppIcon"
+
 import { client } from '@/lib/client';
 import { urlFor } from '@/lib/client';
 
@@ -26,6 +28,7 @@ export default function Home(
 ) {
   return (
     <>
+    <WhatsAppIcon/>
     <Navbar />
     <Hero heroItems={heroItems} />
     <Services services={services} />
