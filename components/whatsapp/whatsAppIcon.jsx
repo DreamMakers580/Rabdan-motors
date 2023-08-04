@@ -15,7 +15,7 @@ const WhatsAppIcon = () => {
   return (
     <div className='relative'>
         <a href='https://wa.me/971508030173' className='fixed z-[1000] cursor-pointer bottom-8 right-6 md:bottom-10 md:right-10 ' >
-          <img src = "/images/background/whatsapp.svg" alt="whatsapp SVG"/>
+          <img className='md:h-[96px] md:w-[96px] h-[72px] h-[72px]' src = "/images/background/whatsapp.svg" alt="whatsapp SVG"/>
         </a>
     </div>
 
